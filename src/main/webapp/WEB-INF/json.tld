@@ -1,0 +1,29 @@
+<!DOCTYPE taglib
+  PUBLIC "-//Sun Microsystems, Inc.//DTD JSP Tag Library 1.2//EN" "http://java.sun.com/dtd/web-jsptaglibrary_1_2.dtd">
+
+<!-- a tab library descriptor -->
+<taglib xmlns="http://java.sun.com/JSP/TagLibraryDescriptor">
+	<tlib-version>1.0</tlib-version>
+	<short-name>Control view screen</short-name>
+
+	<tag>
+    	<name>path</name>
+    	<tag-class>com.lumiata.tag.JsonFormatter</tag-class>
+    	<body-content>JSP</body-content>
+    	<description>
+        	Get values from JsonNode
+    	</description>
+    	 <attribute>
+            <name>jsonNode</name>
+            <required>true</required>
+            <rtexprvalue>true</rtexprvalue>
+            <description>JsonNode</description>
+        </attribute>
+        <attribute>
+            <name>elementName</name>
+            <required>true</required>
+            <rtexprvalue>true</rtexprvalue>
+            <description>Provide a JsonNode for this String</description>
+        </attribute>
+  	</tag>
+</taglib>
