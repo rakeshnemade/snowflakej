@@ -1,2 +1,2 @@
 # snowflakej
-Initial Import
+This project is for testing.
